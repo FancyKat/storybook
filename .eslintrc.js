@@ -1,17 +1,9 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  extends: [
-    'airbnb',
-    'airbnb-typescript',
-    'airbnb/hooks',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:react/jsx-runtime',
-    'prettier',
-  ],
+  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking', 'plugin:react/jsx-runtime', 'prettier', 'plugin:storybook/recommended'],
   parserOptions: {
-    project: './tsconfig.json',
+    project: './tsconfig.json'
   },
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -26,6 +18,6 @@ module.exports = {
     'no-plusplus': 'off',
     'no-underscore-dangle': 'off',
     'no-use-before-define': 'off',
-    'prefer-destructuring': 'off',
-  },
+    'prefer-destructuring': 'off'
+  }
 };
